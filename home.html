@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AML Fincrime Guidance Hub</title>
+  <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+  <div class="site-shell glass">
+    
+    <!-- Left Navigation Sidebar/Rail -->
+    <aside class="site-rail" aria-label="Primary navigation">
+      <a class="brand" href="/" aria-label="Guidance Hub home">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span class="brand-text">Fincrime Hub</span>
+      </a>
+      <nav class="nav-links" data-site-nav>
+        <a class="nav-link" href="#guidance">Guidance &amp; Updates</a>
+        <a class="nav-link" href="#resources">Process Library</a>
+        <a class="nav-link" href="#documents">Document Library</a>
+        <a class="nav-link" href="#org">POD Structure</a>
+        <a class="nav-link" href="#meet-team">Meet the Team</a>
+      </nav>
+    </aside>
+
+    <div class="site-content">
+      <main class="page-main">
+        
+        <!-- Home Section -->
+        <section id="home" class="hero">
+          <div class="hero-copy">
+            <span class="eyebrow">AML Fincrime Guidance Hub</span>
+            <h1 class="hero-title">Welcome<span data-user-display-name="" data-user-name="John Doe"></span>.</h1>
+            <p class="hero-text">Your AML process guidance, regulatory updates, control changes, escalation standards, and operational resources are ready in one calm glass workspace.</p>
+          </div>
+          <form role="search" action="/" method="get" class="search-panel glass">
+            <input type="search" name="q" placeholder="Search AML guidance, process updates, typologies..." aria-label="Search AML Fincrime guidance hub" />
+            <button type="submit" class="btn">Search</button>
+          </form>
+        </section>
+
+        <!-- Guidance Section -->
+        <section id="guidance" class="section">
+          <div data-guidance-calendar="" class="page-panel glass guidance-change-panel">
+            <div class="section-header">
+              <div>
+                <span class="eyebrow">Guidance &amp; Updates</span>
+                <h2 class="section-title">Reimagined guidance, policies, and analyst insights.</h2>
+                <p class="section-kicker">Track published updates in a governed calendar view with quick access to the selected guidance details.</p>
+              </div>
+            </div>
+            <div class="guidance-calendar-controls">
+              <label><span>Year</span><select data-guidance-year="" aria-label="Select guidance year" class="week-select"></select></label>
+              <label><span>Month</span><select data-guidance-month="" aria-label="Select guidance month" class="week-select"></select></label>
+              <label><span>Week</span><select data-guidance-week="" aria-label="Select guidance week" class="week-select"></select></label>
+            </div>
+            <div class="guidance-calendar-layout">
+              <div class="guidance-calendar-shell">
+                <div class="guidance-calendar-heading">
+                  <button type="button" data-guidance-prev="" aria-label="Previous month" class="calendar-nav-btn">‹</button>
+                  <h3 data-guidance-calendar-title="" class="card-title">Loading guidance calendar</h3>
+                  <button type="button" data-guidance-next="" aria-label="Next month" class="calendar-nav-btn">›</button>
+                </div>
+                <div aria-hidden="true" class="calendar-weekdays"><span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span></div>
+                <div data-guidance-month-grid="" class="guidance-month-grid"></div>
+              </div>
+              <aside class="guidance-update-panel">
+                <span class="eyebrow">Selected guidance</span>
+                <h3 data-guidance-results-title="" class="card-title">Loading updates</h3>
+                <div data-guidance-results="" class="guidance-update-list"></div>
+              </aside>
+            </div>
+          </div>
+        </section>
+
+        <!-- Process Library (Searchable Resources Card Grid) -->
+        <section id="resources" class="section page-panel glass">
+          <div class="section-header">
+            <div>
+              <span class="eyebrow">Process Library</span>
+              <h2 class="section-title">Searchable glass resource library.</h2>
+              <p class="section-kicker">Use this section for process resources, escalation standards, operating references, and controlled analyst support material.</p>
+            </div>
+          </div>
+          <form role="search" action="/#resources" method="get" class="search-panel glass" style="margin-bottom: var(--space-5);">
+            <input type="search" name="q" placeholder="Search resources..." aria-label="Search resources" />
+            <button type="submit" class="btn">Search</button>
+          </form>
+
+          <div class="resource-grid">
+            <article class="resource-card glass">
+              <span class="doc-type">SOP</span>
+              <h3 class="card-title">CDD Operating Standard</h3>
+              <p class="card-text">Standardized benchmarks for customer verification, beneficial ownership identification, and source of wealth reviews.</p>
+              <div class="doc-meta">
+                <span>Owner: AML Readiness</span>
+                <span>Last Updated: May 2026</span>
+              </div>
+              <a href="#" class="btn">Open SOP</a>
+            </article>
+
+            <article class="resource-card glass">
+              <span class="doc-type">Checklist</span>
+              <h3 class="card-title">L1 Alert Escalation Guide</h3>
+              <p class="card-text">Step-by-step verification standard for analysts before escalating suspicious activity alerts to L2 review.</p>
+              <div class="doc-meta">
+                <span>Owner: Quality Assurance</span>
+                <span>Version: v2.4 (Active)</span>
+              </div>
+              <a href="#" class="btn">Open Checklist</a>
+            </article>
+
+            <article class="resource-card glass">
+              <span class="doc-type">Guide</span>
+              <h3 class="card-title">High-Risk Typologies Guide</h3>
+              <p class="card-text">Curated list of transaction indicators, trade-based money laundering typologies, and shell company detection red flags.</p>
+              <div class="doc-meta">
+                <span>Owner: Intelligence Unit</span>
+                <span>Updated: Quarterly</span>
+              </div>
+              <a href="https://sharepoint.cfsb.com/fincrime/tbml_typology_guide.pptx" target="_blank" rel="noopener" class="btn">View Guide</a>
+            </article>
+
+            <article class="resource-card glass">
+              <span class="doc-type">Protocol</span>
+              <h3 class="card-title">Sanctions Screening Protocol</h3>
+              <p class="card-text">Operational guidelines and screening rules for resolving potential PEP and international sanctions match queues.</p>
+              <div class="doc-meta">
+                <span>Owner: Sanctions Desk</span>
+                <span>Last Updated: April 2026</span>
+              </div>
+              <a href="#" class="btn">View Protocol</a>
+            </article>
+
+            <article class="resource-card glass">
+              <span class="doc-type">SOP</span>
+              <h3 class="card-title">SAR Filing Narrative Standard</h3>
+              <p class="card-text">Regulatory report formatting guidelines, approved compliance wording, and mandatory narratives for FinCEN reporting.</p>
+              <div class="doc-meta">
+                <span>Owner: Regulatory Reporting</span>
+                <span>Current Version</span>
+              </div>
+              <a href="#" class="btn">Open SOP</a>
+            </article>
+
+            <article class="resource-card glass">
+              <span class="doc-type">Excel</span>
+              <h3 class="card-title">Typology Code Mapping</h3>
+              <p class="card-text">Full cross-reference database mapping internal transaction codes to global money laundering typologies.</p>
+              <div class="doc-meta">
+                <span>Owner: Best Practices</span>
+                <span>Version: v1.1</span>
+              </div>
+              <a href="#" class="btn">Open Database</a>
+            </article>
+          </div>
+        </section>
+
+        <!-- Document Library Section -->
+        <section id="documents" class="section page-panel glass">
+          <div class="section-header">
+            <div>
+              <span class="eyebrow">Document Library</span>
+              <h2 class="section-title">Central library for reports and working documents.</h2>
+              <p class="section-kicker">Access throughput reports, newsletter files, templates, trackers, and supporting materials from one governed document hub.</p>
+            </div>
+            <a href="/contact" class="btn btn--ghost">Request update</a>
+          </div>
+          <div class="document-grid">
+            <article class="document-card glass">
+              <span class="doc-type">Excel</span>
+              <h3 class="card-title">Weekly Throughput Report</h3>
+              <p class="card-text">Latest weekly view of queue movement, volume, productivity, and operating throughput.</p>
+              <div class="doc-meta"><span>Owner: Readiness Team</span><span>Updated weekly</span></div>
+              <a href="#" class="btn">Open report</a>
+            </article>
+            <article class="document-card glass">
+              <span class="doc-type">PDF</span>
+              <h3 class="card-title">Monthly Fincrime Newsletter</h3>
+              <p class="card-text">Published newsletter with team highlights, process reminders, and upcoming focus areas.</p>
+              <div class="doc-meta"><span>Owner: Newsletter Team</span><span>Monthly</span></div>
+              <a href="#" class="btn">View newsletter</a>
+            </article>
+            <article class="document-card glass">
+              <span class="doc-type">Template</span>
+              <h3 class="card-title">Process Update Request Template</h3>
+              <p class="card-text">Standard request format for submitting new content, policy updates, or website changes.</p>
+              <div class="doc-meta"><span>Owner: Website Team</span><span>Current version</span></div>
+              <a href="#" class="btn">Use template</a>
+            </article>
+            <article class="document-card glass">
+              <span class="doc-type">Excel</span>
+              <h3 class="card-title">Quality Feedback Tracker</h3>
+              <p class="card-text">Feedback intake, review status, action owners, and closure tracking for process optimization.</p>
+              <div class="doc-meta"><span>Owner: Best Practices</span><span>Bi-weekly</span></div>
+              <a href="#" class="btn">Open tracker</a>
+            </article>
+            <article class="document-card glass">
+              <span class="doc-type">Folder</span>
+              <h3 class="card-title">SharePoint Source Library</h3>
+              <p class="card-text">Connect this card to the source SharePoint folder where the latest governed documents are maintained.</p>
+              <div class="doc-meta"><span>Owner: Site Admin</span><span>Link pending</span></div>
+              <a href="#" class="btn">Open library</a>
+            </article>
+          </div>
+        </section>
+
+        <!-- Org Section -->
+        <section id="org" class="section">
+          <div class="hero-copy">
+            <span class="eyebrow">POD Structure</span>
+            <h2 class="section-title">Ownership and analyst POD structure.</h2>
+            <p class="section-kicker">Search by POD, workstream, owner, or team member to locate the correct operating group.</p>
+          </div>
+          <form role="search" action="/#org" method="get" data-org-search-form="" class="search-panel glass">
+            <input type="search" name="q" placeholder="Search by POD, workstream, owner, or team member..." aria-label="Search POD structure" data-org-search-input="" />
+            <button type="submit" class="btn">Search</button>
+          </form>
+          <p data-org-search-feedback="" class="org-search-feedback">Search a name to locate the POD it belongs to.</p>
+        </section>
+
+        <section class="section page-panel glass pod-workstream-panel">
+          <span class="workstream-label">Alert Workstream (L1)</span>
+          <div class="pod-board">
+            <article class="pod-card">
+              <div class="pod-heading">
+                <div class="pod-id">POD-1</div>
+                <div class="pod-lead">Shreya</div>
+              </div>
+              <div class="pod-body"><span class="pod-member pod-member--coordinator">Shreya Sethi</span><span class="pod-member pod-member--coordinator">Shephin John</span><span class="pod-member">Pratyush Tomar</span><span class="pod-member">Rohit Singh</span><span class="pod-member">Sumeet Tiwari</span><span class="pod-member">Ankit Sahoo</span><span class="pod-member">Hashika Shree D</span><span class="pod-member">Abhishek Upadhyay</span></div>
+            </article>
+            <article class="pod-card">
+              <div class="pod-heading">
+                <div class="pod-id">POD-2</div>
+                <div class="pod-lead">Subroto Kumar Bose</div>
+              </div>
+              <div class="pod-body"><span class="pod-member pod-member--coordinator">Durga Sai Raghavendra</span><span class="pod-member pod-member--coordinator">Sammed Devendra Upadhyay</span><span class="pod-member">Sandra Thomas</span><span class="pod-member">Shruti Pathak</span><span class="pod-member">Ananya K</span><span class="pod-member">Esha Mishra</span><span class="pod-member">Satya Pradeepti Choppakatla</span><span class="pod-member">Akash Miriyala</span></div>
+            </article>
+            <article class="pod-card">
+              <div class="pod-heading">
+                <div class="pod-id">POD-3</div>
+                <div class="pod-lead">Ankita Narang</div>
+              </div>
+              <div class="pod-body"><span class="pod-member pod-member--coordinator">Meena Lax</span><span class="pod-member pod-member--coordinator">Ankita Narang</span><span class="pod-member">Swati</span><span class="pod-member">Himani Siddwani</span><span class="pod-member">Akash Priyadarshi</span><span class="pod-member">Piyush Singh</span><span class="pod-member">Sukriti Sneha</span><span class="pod-member">Tanya Aggarwal</span></div>
+            </article>
+            <article class="pod-card">
+              <div class="pod-heading">
+                <div class="pod-id">POD-4</div>
+                <div class="pod-lead">Rajeev Ratna</div>
+              </div>
+              <div class="pod-body"><span class="pod-member pod-member--coordinator">Rajeev Ratna</span><span class="pod-member pod-member--coordinator">Aiwathy Biju Nair</span><span class="pod-member">Pragya Gautam</span><span class="pod-member">Samay Sharma</span><span class="pod-member">Hiteshwar Dutt</span><span class="pod-member">Anurag Sharma</span><span class="pod-member">Vivek Raina</span><span class="pod-member">Kadesh Kumar</span></div>
+            </article>
+            <article class="pod-card">
+              <div class="pod-heading">
+                <div class="pod-id">POD-5</div>
+                <div class="pod-lead">Sushma</div>
+              </div>
+              <div class="pod-body"><span class="pod-member pod-member--coordinator">Sushma Ashok Kumar Sharma</span><span class="pod-member pod-member--coordinator">Swapnil Vinayak Pawar</span><span class="pod-member">Chandnik Saha</span><span class="pod-member">Naincy Lnu</span><span class="pod-member">Eva Thomas</span><span class="pod-member">Aishwarya Ghosh</span><span class="pod-member">Rakesh TS</span><span class="pod-member">Subiksha Srinivasan</span></div>
+            </article>
+            <article class="pod-card">
+              <div class="pod-heading">
+                <div class="pod-id">POD-6</div>
+                <div class="pod-lead">Somya</div>
+              </div>
+              <div class="pod-body"><span class="pod-member pod-member--coordinator">Somya Vora</span><span class="pod-member pod-member--coordinator">Rashmi Kiran</span><span class="pod-member">Priya Nithya</span><span class="pod-member">Mohit Vijeykumar Bohra</span><span class="pod-member">Abhis Kumar</span><span class="pod-member">Sayan Sarkar</span><span class="pod-member">Hema Bindu Nerella</span><span class="pod-member">V Keshi Reddy</span></div>
+            </article>
+            <article class="pod-card">
+              <div class="pod-heading">
+                <div class="pod-id">POD-7</div>
+                <div class="pod-lead">Mohini</div>
+              </div>
+              <div class="pod-body"><span class="pod-member pod-member--coordinator">Nilesh Joshi</span><span class="pod-member pod-member--coordinator">Mohini Srivastava</span><span class="pod-member">Arjun Bhaskar KP</span><span class="pod-member">Swapnil Saha</span><span class="pod-member">Trisha Karmakar</span><span class="pod-member">Nihal S</span><span class="pod-member">Sayani Dey</span><span class="pod-member">Mittal Gupta</span></div>
+            </article>
+            <article class="pod-card">
+              <div class="pod-heading">
+                <div class="pod-id">POD-8</div>
+                <div class="pod-lead">Ankita Sarkar / Nivedita</div>
+              </div>
+              <div class="pod-body"><span class="pod-member pod-member--coordinator">Nivedita Paul</span><span class="pod-member pod-member--coordinator">Ankita Sarkar</span><span class="pod-member">Sudeshna Mukhopadhyay</span><span class="pod-member">Puja Modak</span><span class="pod-member">Syed Mehedi Hassan</span><span class="pod-member">Tity Roy</span><span class="pod-member">Arijit Sarkar</span><span class="pod-member">Souvik Datta</span></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section page-panel glass pod-workstream-panel">
+          <span class="workstream-label">L2 Workstream</span>
+          <div class="pod-board">
+            <article class="pod-card">
+              <div class="pod-heading">
+                <div class="pod-id">POD-9</div>
+                <div class="pod-lead">Meena</div>
+              </div>
+              <div class="pod-body"><span class="pod-member">Kabir Goyal</span><span class="pod-member">Hitesh Sharma</span><span class="pod-member">Yuktha Kaushik</span><span class="pod-member">Jayil Modi</span><span class="pod-member">Lakshya Arora</span></div>
+            </article>
+            <article class="pod-card">
+              <div class="pod-heading">
+                <div class="pod-id">POD-10</div>
+                <div class="pod-lead">Nilesh</div>
+              </div>
+              <div class="pod-body"><span class="pod-member">Sampath Kumar</span><span class="pod-member">Swapna Aradhya</span><span class="pod-member">Appiram Banerjee</span><span class="pod-member">Anushee Jain</span><span class="pod-member">Ayush Dutt</span></div>
+            </article>
+            <article class="pod-card">
+              <div class="pod-heading">
+                <div class="pod-id">POD-11</div>
+                <div class="pod-lead">Durga Sai Raghavendra</div>
+              </div>
+              <div class="pod-body"><span class="pod-member">Mayur Kukkuni</span><span class="pod-member">Pulijala Harshith Anulekha</span><span class="pod-member">Gautami Dhimali</span><span class="pod-member">Pavni</span><span class="pod-member">Vivek Kumar Prasad</span></div>
+            </article>
+            <article class="pod-card">
+              <div class="pod-heading">
+                <div class="pod-id">RFI Coor.</div>
+                <div class="pod-lead">RFI Coordination</div>
+              </div>
+              <div class="pod-body"><span class="pod-member">Shiva Kumar Ojha</span><span class="pod-member">Nishant Jain</span></div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Meet the Team Section -->
+        <section id="meet-team" class="section page-panel glass">
+          <div class="section-header">
+            <div>
+              <span class="eyebrow">Meet the Team</span>
+              <h2 class="section-title">Core Domains &amp; Ownership</h2>
+              <p class="section-kicker">An overview of key responsibilities and the specialized teams driving our initiatives forward.</p>
+            </div>
+          </div>
+          <div class="team-grid">
+            <article class="team-card">
+              <span class="card-icon">◇</span><span class="team-label">Website Delivery</span>
+              <h3 class="card-title">Foundation and Delivery</h3>
+              <p class="card-text">Delivering the primary website framework including visual aesthetics and comprehensive Power Pages readiness.</p>
+              <div class="team-members"><span class="team-member">Mohini</span><span class="team-member">Mitali</span><span class="team-member">Swapnil</span></div>
+            </article>
+            <article class="team-card">
+              <span class="card-icon">✦</span><span class="team-label">Quality &amp; Feedback</span>
+              <h3 class="card-title">Process and Optimization</h3>
+              <p class="card-text">Driving workflow enhancements through reviews, consolidated feedback, and actionable process improvements.</p>
+              <div class="team-members"><span class="team-member">Nilesh</span></div>
+            </article>
+            <article class="team-card">
+              <span class="card-icon">▧</span><span class="team-label">Communications</span>
+              <h3 class="card-title">Team Newsletter</h3>
+              <p class="card-text">Managing the end-to-end coordination, content creation, and deployment of the recurring AML Fincrime newsletter.</p>
+              <div class="team-members"><span class="team-member">Sushma</span><span class="team-member">Nithin</span><span class="team-member">Mohini</span></div>
+            </article>
+          </div>
+        </section>
+
+      </main>
+
+      <!-- Footer -->
+      <footer class="site-footer glass site-footer--single">
+        <div class="footer-quote">Efficiency through centralized intelligence.</div>
+        <div class="footer-links">
+          <a href="/contact">Contact us</a>
+        </div>
+      </footer>
+
+      <!-- Guidance Details Modal -->
+      <div class="modal-backdrop" data-guidance-modal hidden>
+        <section class="guidance-modal glass" role="dialog" aria-modal="true" aria-labelledby="guidance-modal-title">
+          <button class="modal-close" type="button" data-guidance-close aria-label="Close guidance details">×</button>
+          <span class="doc-type" data-guidance-modal-date></span>
+          <h2 class="section-title" id="guidance-modal-title" data-guidance-modal-title></h2>
+          <div class="doc-meta"><span data-guidance-modal-owner></span></div>
+          <p class="card-text" data-guidance-modal-body></p>
+        </section>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Script Modules -->
+  <script>
+document.addEventListener('DOMContentLoaded', function () {
+  var menuButton = document.querySelector('[data-menu-toggle]');
+  var nav = document.querySelector('[data-site-nav]');
+
+  if (menuButton && nav) {
+    menuButton.addEventListener('click', function () {
+      var isOpen = nav.getAttribute('data-open') === 'true';
+      nav.setAttribute('data-open', String(!isOpen));
+      menuButton.setAttribute('aria-expanded', String(!isOpen));
+    });
+  }
+
+  var cards = document.querySelectorAll('.glass-card, .resource-card, .metric-card, .document-card, .guidance-change-panel');
+  cards.forEach(function (card, index) {
+    card.style.setProperty('--reveal-delay', String(index * 70) + 'ms');
+    card.classList.add('is-revealed');
+  });
+
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('[data-site-nav] .nav-link[href*="#"]'));
+  var sectionLinks = navLinks.map(function (link) {
+    var hash = new URL(link.getAttribute('href'), window.location.href).hash;
+    return {
+      hash: hash,
+      link: link,
+      section: hash ? document.querySelector(hash) : null
+    };
+  }).filter(function (item) {
+    return item.section;
+  });
+
+  var pageLinks = Array.prototype.slice.call(document.querySelectorAll('[data-site-nav] .nav-link:not([href*="#"])'));
+
+  function updatePageActiveLink() {
+    if (sectionLinks.length || !pageLinks.length) {
+      return;
+    }
+
+    var currentPath = window.location.pathname.replace(/\/$/, '') || '/';
+    pageLinks.forEach(function (link) {
+      var linkPath = new URL(link.getAttribute('href'), window.location.href).pathname.replace(/\/$/, '') || '/';
+      link.classList.toggle('is-active', linkPath === currentPath);
+    });
+  }
+
+  function setActiveLink(hash) {
+    navLinks.forEach(function (link) {
+      link.classList.remove('is-active');
+    });
+
+    sectionLinks.forEach(function (item) {
+      if (item.hash === hash) {
+        item.link.classList.add('is-active');
+      }
+    });
+  }
+
+  function updateActiveLink() {
+    if (!sectionLinks.length) {
+      return;
+    }
+
+    var navHeight = document.querySelector('.site-nav') ? document.querySelector('.site-nav').offsetHeight : 0;
+    var marker = window.scrollY + navHeight + Math.min(window.innerHeight * 0.24, 180);
+    var activeHash = sectionLinks[0].hash;
+
+    sectionLinks.forEach(function (item) {
+      if (item.section.offsetTop <= marker) {
+        activeHash = item.hash;
+      }
+    });
+
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) {
+      activeHash = sectionLinks[sectionLinks.length - 1].hash;
+    }
+
+    setActiveLink(activeHash);
+  }
+
+  updateActiveLink();
+  updatePageActiveLink();
+  window.addEventListener('scroll', updateActiveLink, { passive: true });
+  window.addEventListener('resize', updateActiveLink);
+});
+  </script>
+  
+  <script>
+document.addEventListener('DOMContentLoaded', function () {
+  var forms = Array.prototype.slice.call(document.querySelectorAll('form.search-panel[role="search"]')).filter(function (form) {
+    return !form.hasAttribute('data-org-search-form');
+  });
+  var pageCache = {};
+
+  if (!forms.length) {
+    return;
+  }
+
+  function normalize(value) {
+    return (value || '').toLowerCase().replace(/\s+/g, ' ').trim();
+  }
+
+  function isVisible(element) {
+    return !element.hidden && !element.closest('[hidden]');
+  }
+
+  function cleanText(value) {
+    return (value || '').replace(/\s+/g, ' ').trim();
+  }
+
+  function getTitle(element) {
+    var podId = element.querySelector('.pod-id');
+    var podLead = element.querySelector('.pod-lead');
+    var title = element.querySelector('.card-title, .section-title, .page-title, .hero-title, .team-label, .doc-type, .eyebrow');
+
+    if (podId || podLead) {
+      return cleanText([podId ? podId.textContent : '', podLead ? podLead.textContent : ''].filter(Boolean).join(' — '));
+    }
+
+    if (title) {
+      return cleanText(title.textContent);
+    }
+
+    return cleanText(element.textContent).slice(0, 72);
+  }
+
+  function getCategory(element) {
+    if (element.matches('.pod-card')) {
+      return 'POD Structure';
+    }
+    if (element.matches('.document-card')) {
+      return 'Document Library';
+    }
+    if (element.matches('.team-card')) {
+      return 'Meet the Team';
+    }
+    if (element.matches('.guidance-change-panel')) {
+      return 'Guidance Calendar';
+    }
+    if (element.matches('.resource-card')) {
+      return 'Process Library';
+    }
+    return 'Page';
+  }
+
+  function getUrl(element, baseUrl) {
+    var link = element.matches('a[href]') ? element : element.querySelector('a[href]');
+    var section = element.id ? element : element.closest('section[id]');
+
+    if (link && link.getAttribute('href') && link.getAttribute('href') !== '#') {
+      return new URL(link.getAttribute('href'), baseUrl).href;
+    }
+
+    if (section && section.id) {
+      return new URL('#' + section.id, baseUrl).href;
+    }
+
+    return new URL(baseUrl).href;
+  }
+
+  function getExcerpt(text, query) {
+    var clean = cleanText(text);
+    var lower = clean.toLowerCase();
+    var index = lower.indexOf(query.toLowerCase());
+    var start = index > 42 ? index - 42 : 0;
+    var excerpt = clean.slice(start, start + 170);
+
+    if (start > 0) {
+      excerpt = '…' + excerpt;
+    }
+
+    if (start + 170 < clean.length) {
+      excerpt += '…';
+    }
+
+    return excerpt;
+  }
+
+  function collectRecords(root, baseUrl) {
+    var selector = '.document-card, .team-card, .pod-card, .resource-card, .guidance-change-panel, section.hero, section.page-panel';
+    return Array.prototype.slice.call(root.querySelectorAll(selector)).filter(function (element) {
+      if (!isVisible(element)) {
+        return false;
+      }
+      if (element.matches('section.page-panel') && element.querySelector('.document-card, .team-card, .pod-card, .resource-card')) {
+        return false;
+      }
+      return cleanText(element.textContent).length > 24;
+    }).map(function (element) {
+      var text = cleanText(element.textContent);
+      return {
+        title: getTitle(element),
+        category: getCategory(element),
+        text: text,
+        normalizedText: normalize(text),
+        url: getUrl(element, baseUrl),
+        element: root === document ? element : null
+      };
+    });
+  }
+
+  function getPageUrls() {
+    var urls = Array.prototype.slice.call(document.querySelectorAll('[data-site-nav] .nav-link[href]')).map(function (link) {
+      var href = link.getAttribute('href');
+      if (!href || href.indexOf('#') === 0 || href.indexOf('mailto:') === 0 || href.indexOf('tel:') === 0) {
+        return '';
+      }
+      return new URL(href, window.location.href).href.split('#')[0];
+    }).filter(Boolean);
+
+    return Array.from(new Set(urls)).filter(function (url) {
+      return new URL(url).origin === window.location.origin && url !== window.location.href.split('#')[0];
+    });
+  }
+
+  function fetchPageRecords(url) {
+    if (pageCache[url]) {
+      return pageCache[url];
+    }
+
+    pageCache[url] = fetch(url, { credentials: 'same-origin' }).then(function (response) {
+      if (!response.ok) {
+        return [];
+      }
+      return response.text();
+    }).then(function (html) {
+      var parsed = new DOMParser().parseFromString(html, 'text/html');
+      return collectRecords(parsed, url);
+    }).catch(function () {
+      return [];
+    });
+
+    return pageCache[url];
+  }
+
+  function getRecords() {
+    var localRecords = collectRecords(document, window.location.href);
+    var pageUrls = getPageUrls();
+
+    if (!pageUrls.length) {
+      return Promise.resolve(localRecords);
+    }
+
+    return Promise.all(pageUrls.map(fetchPageRecords)).then(function (remoteGroups) {
+      var allRecords = localRecords.concat.apply(localRecords, remoteGroups);
+      var seen = {};
+      return allRecords.filter(function (record) {
+        var key = record.url + '|' + record.title + '|' + record.text.slice(0, 60);
+        if (seen[key]) {
+          return false;
+        }
+        seen[key] = true;
+        return true;
+      });
+    });
+  }
+
+  function scoreRecord(record, query) {
+    var normalizedQuery = normalize(query);
+    var tokens = normalizedQuery.split(' ').filter(Boolean);
+    var score = 0;
+
+    if (!tokens.length) {
+      return 0;
+    }
+
+    if (normalize(record.title).indexOf(normalizedQuery) !== -1) {
+      score += 8;
+    }
+
+    if (normalize(record.category).indexOf(normalizedQuery) !== -1) {
+      score += 4;
+    }
+
+    if (record.normalizedText.indexOf(normalizedQuery) !== -1) {
+      score += 5;
+    }
+
+    tokens.forEach(function (token) {
+      if (record.normalizedText.indexOf(token) !== -1) {
+        score += 1;
+      }
+    });
+
+    return score;
+  }
+
+  function ensureResults(form) {
+    var panel = form.parentElement.querySelector('[data-site-search-results]');
+    var feedback;
+    var list;
+
+    if (!panel) {
+      panel = document.createElement('div');
+      panel.className = 'site-search-panel';
+      panel.setAttribute('data-site-search-results', '');
+      feedback = document.createElement('p');
+      feedback.className = 'site-search-feedback';
+      list = document.createElement('div');
+      list.className = 'site-search-results';
+      panel.append(feedback, list);
+      form.insertAdjacentElement('afterend', panel);
+    }
+
+    return {
+      panel: panel,
+      feedback: panel.querySelector('.site-search-feedback'),
+      list: panel.querySelector('.site-search-results')
+    };
+  }
+
+  function renderResults(form, matches, query) {
+    var ui = ensureResults(form);
+    ui.list.innerHTML = '';
+
+    if (!matches.length) {
+      ui.feedback.textContent = 'No results found for “' + query + '”.';
+      return;
+    }
+
+    ui.feedback.textContent = matches.length + ' result' + (matches.length === 1 ? '' : 's') + ' found for “' + query + '”.';
+
+    matches.slice(0, 8).forEach(function (record) {
+      var result = document.createElement('a');
+      var category = document.createElement('span');
+      var title = document.createElement('strong');
+      var excerpt = document.createElement('span');
+
+      result.className = 'site-search-result';
+      result.href = record.url;
+      category.className = 'site-search-category';
+      category.textContent = record.category;
+      title.textContent = record.title;
+      excerpt.textContent = getExcerpt(record.text, query);
+      result.append(category, title, excerpt);
+      ui.list.appendChild(result);
+    });
+
+    if (matches[0] && matches[0].element) {
+      matches[0].element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }
+
+  function runSearch(form) {
+    var input = form.querySelector('input[type="search"], input[name="q"]');
+    var ui = ensureResults(form);
+    var query = input ? input.value.trim() : '';
+
+    if (!query) {
+      ui.feedback.textContent = 'Enter a keyword to search this hub.';
+      ui.list.innerHTML = '';
+      return;
+    }
+
+    ui.feedback.textContent = 'Searching for “' + query + '”…';
+    ui.list.innerHTML = '';
+
+    getRecords().then(function (records) {
+      var matches = records.map(function (record) {
+        return Object.assign({}, record, { score: scoreRecord(record, query) });
+      }).filter(function (record) {
+        return record.score > 0;
+      }).sort(function (a, b) {
+        return b.score - a.score;
+      });
+
+      renderResults(form, matches, query);
+    });
+  }
+
+  forms.forEach(function (form, index) {
+    var input = form.querySelector('input[type="search"], input[name="q"]');
+    var initialQuery = new URLSearchParams(window.location.search).get('q');
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      runSearch(form);
+    });
+
+    if (input) {
+      input.addEventListener('input', function () {
+        if (!input.value.trim()) {
+          ensureResults(form).panel.remove();
+        }
+      });
+
+      if (index === 0 && initialQuery && !input.value) {
+        input.value = initialQuery;
+        runSearch(form);
+      }
+    }
+  });
+});
+  </script>
+  
+  <script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('[data-user-display-name]').forEach(function (target) {
+    var name = target.getAttribute('data-user-name') || '';
+
+    if (!name && window.portalUser && window.portalUser.fullname) {
+      name = window.portalUser.fullname;
+    }
+
+    if (!name && window.Microsoft && window.Microsoft.Dynamic365 && window.Microsoft.Dynamic365.PortalUser) {
+      name = window.Microsoft.Dynamic365.PortalUser.fullname || window.Microsoft.Dynamic365.PortalUser.name || '';
+    }
+
+    if (name.trim()) {
+      target.textContent = ', ' + name.trim();
+    }
+  });
+});
+  </script>
+  
+  <script>
+document.addEventListener('DOMContentLoaded', function () {
+  var guidanceModal = document.querySelector('[data-guidance-modal]');
+  var guidanceCloseButton = document.querySelector('[data-guidance-close]');
+  var monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  var fullMonthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+  function closeGuidanceModal() {
+    if (!guidanceModal) {
+      return;
+    }
+
+    guidanceModal.hidden = true;
+    document.body.style.overflow = '';
+  }
+
+  function openGuidanceModal(guidance) {
+    if (!guidanceModal) {
+      return;
+    }
+
+    var title = guidanceModal.querySelector('[data-guidance-modal-title]');
+    var date = guidanceModal.querySelector('[data-guidance-modal-date]');
+    var owner = guidanceModal.querySelector('[data-guidance-modal-owner]');
+    var body = guidanceModal.querySelector('[data-guidance-modal-body]');
+
+    if (title) {
+      title.textContent = guidance.title || '';
+    }
+
+    if (date) {
+      date.textContent = guidance.displayDate || '';
+    }
+
+    if (owner) {
+      owner.textContent = 'Owner: ' + (guidance.owner || '');
+    }
+
+    if (body) {
+      body.textContent = guidance.fullGuidance || guidance.summary || '';
+    }
+
+    guidanceModal.hidden = false;
+    document.body.style.overflow = 'hidden';
+  }
+
+  if (guidanceCloseButton) {
+    guidanceCloseButton.addEventListener('click', closeGuidanceModal);
+  }
+
+  if (guidanceModal) {
+    guidanceModal.addEventListener('click', function (event) {
+      if (event.target === guidanceModal) {
+        closeGuidanceModal();
+      }
+    });
+  }
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+      closeGuidanceModal();
+    }
+  });
+
+  function parseCsv(csv) {
+    var rows = [];
+    var row = [];
+    var field = '';
+    var inQuotes = false;
+
+    for (var index = 0; index < csv.length; index += 1) {
+      var char = csv[index];
+      var nextChar = csv[index + 1];
+
+      if (char === '"' && inQuotes && nextChar === '"') {
+        field += '"';
+        index += 1;
+      } else if (char === '"') {
+        inQuotes = !inQuotes;
+      } else if (char === ',' && !inQuotes) {
+        row.push(field);
+        field = '';
+      } else if ((char === '\n' || char === '\r') && !inQuotes) {
+        if (char === '\r' && nextChar === '\n') {
+          index += 1;
+        }
+        row.push(field);
+        if (row.some(function (value) { return value.trim() !== ''; })) {
+          rows.push(row);
+        }
+        row = [];
+        field = '';
+      } else {
+        field += char;
+      }
+    }
+
+    if (field || row.length) {
+      row.push(field);
+      rows.push(row);
+    }
+
+    if (!rows.length) {
+      return [];
+    }
+
+    var headers = rows.shift().map(function (header) {
+      return header.trim();
+    });
+
+    return rows.map(function (values) {
+      return headers.reduce(function (record, header, index) {
+        record[header] = values[index] ? values[index].trim() : '';
+        return record;
+      }, {});
+    });
+  }
+
+  function parseLocalDate(value) {
+    var parts = value.split('-').map(Number);
+    return new Date(parts[0], parts[1] - 1, parts[2]);
+  }
+
+  function formatDisplayDate(date) {
+    return monthNames[date.getMonth()] + ' ' + String(date.getDate()).padStart(2, '0') + ', ' + date.getFullYear();
+  }
+
+  function formatIsoDate(date) {
+    return [
+      date.getFullYear(),
+      String(date.getMonth() + 1).padStart(2, '0'),
+      String(date.getDate()).padStart(2, '0')
+    ].join('-');
+  }
+
+  function getWeekStart(date) {
+    var weekStart = new Date(date);
+    weekStart.setDate(date.getDate() - date.getDay());
+    return weekStart;
+  }
+
+  function uniqueValues(values) {
+    return Array.from(new Set(values));
+  }
+
+  function setOptions(select, options, value) {
+    select.innerHTML = '';
+    options.forEach(function (option) {
+      var element = document.createElement('option');
+      element.value = option.value;
+      element.textContent = option.label;
+      select.appendChild(element);
+    });
+    select.value = value;
+  }
+
+  function getFilteredGuidance(records, filters) {
+    return records.filter(function (record) {
+      var matchesYear = !filters.year || record.year === filters.year;
+      var matchesMonth = !filters.month || record.month === filters.month;
+      var matchesWeek = !filters.week || record.weekStart === filters.week;
+      return matchesYear && matchesMonth && matchesWeek;
+    });
+  }
+
+  function createGuidanceItem(record) {
+    var button = document.createElement('button');
+    button.className = 'guidance-update-item';
+    button.type = 'button';
+
+    var date = document.createElement('span');
+    date.className = 'doc-type';
+    date.textContent = record.displayDate;
+
+    var title = document.createElement('h4');
+    title.className = 'card-title';
+    title.textContent = record.title;
+
+    var summary = document.createElement('p');
+    summary.className = 'card-text';
+    summary.textContent = record.summary;
+
+    var meta = document.createElement('div');
+    meta.className = 'doc-meta';
+    var owner = document.createElement('span');
+    owner.textContent = 'Owner: ' + record.owner;
+    var status = document.createElement('span');
+    status.textContent = 'Status: ' + record.status;
+    meta.append(owner, status);
+
+    button.append(date, title, summary, meta);
+    button.addEventListener('click', function () {
+      openGuidanceModal(record);
+    });
+
+    return button;
+  }
+
+  function openGuidanceRecords(records) {
+    if (records.length === 1) {
+      openGuidanceModal(records[0]);
+      return;
+    }
+
+    openGuidanceModal({
+      title: records.length + ' guidance updates',
+      displayDate: records[0].displayDate,
+      owner: 'Multiple owners',
+      fullGuidance: records.map(function (record) {
+        return record.title + '\n' + record.fullGuidance;
+      }).join('\n\n')
+    });
+  }
+
+  function initGuidanceCalendar(section) {
+    var yearSelect = section.querySelector('[data-guidance-year]');
+    var monthSelect = section.querySelector('[data-guidance-month]');
+    var weekSelect = section.querySelector('[data-guidance-week]');
+    var title = section.querySelector('[data-guidance-calendar-title]');
+    var grid = section.querySelector('[data-guidance-month-grid]');
+    var resultsTitle = section.querySelector('[data-guidance-results-title]');
+    var results = section.querySelector('[data-guidance-results]');
+    var previous = section.querySelector('[data-guidance-prev]');
+    var next = section.querySelector('[data-guidance-next]');
+    var records = [];
+    var calendarDate = new Date();
+    var selectedDate = '';
+
+    if (!yearSelect || !monthSelect || !weekSelect || !grid || !results) {
+      return;
+    }
+
+    function getFilters() {
+      return {
+        year: yearSelect.value,
+        month: monthSelect.value,
+        week: weekSelect.value
+      };
+    }
+
+    function populateFilters() {
+      var selectedYear = yearSelect.value;
+      var selectedMonth = monthSelect.value;
+      var selectedWeek = weekSelect.value;
+      var years = uniqueValues(records.map(function (record) { return record.year; })).sort().reverse();
+
+      if (!selectedYear || !years.includes(selectedYear)) {
+        selectedYear = years[0] || '';
+      }
+
+      var monthRecords = records.filter(function (record) {
+        return record.year === selectedYear;
+      });
+      var months = uniqueValues(monthRecords.map(function (record) { return record.month; })).sort();
+      var monthOptions = [{ value: '', label: 'All months' }].concat(months.map(function (month) {
+        return { value: month, label: fullMonthNames[Number(month) - 1] };
+      }));
+
+      if (selectedMonth && !months.includes(selectedMonth)) {
+        selectedMonth = '';
+      }
+
+      var weekRecords = monthRecords.filter(function (record) {
+        return !selectedMonth || record.month === selectedMonth;
+      });
+      var weeks = uniqueValues(weekRecords.map(function (record) { return record.weekStart; })).sort().reverse();
+      var weekOptions = [{ value: '', label: 'All weeks' }].concat(weeks.map(function (week) {
+        return { value: week, label: 'Week of ' + formatDisplayDate(parseLocalDate(week)) };
+      }));
+
+      if (selectedWeek && !weeks.includes(selectedWeek)) {
+        selectedWeek = '';
+      }
+
+      setOptions(yearSelect, years.map(function (year) {
+        return { value: year, label: year };
+      }), selectedYear);
+      setOptions(monthSelect, monthOptions, selectedMonth);
+      setOptions(weekSelect, weekOptions, selectedWeek);
+    }
+
+    function renderResults() {
+      var filteredRecords = getFilteredGuidance(records, getFilters());
+
+      if (selectedDate) {
+        filteredRecords = filteredRecords.filter(function (record) {
+          return record.date === selectedDate;
+        });
+      }
+
+      filteredRecords.sort(function (a, b) {
+        return b.sortDate - a.sortDate;
+      });
+
+      results.innerHTML = '';
+
+      if (resultsTitle) {
+        resultsTitle.textContent = filteredRecords.length + ' guidance update' + (filteredRecords.length === 1 ? '' : 's') + ' found';
+      }
+
+      if (!filteredRecords.length) {
+        var empty = document.createElement('p');
+        empty.className = 'card-text';
+        empty.textContent = 'No guidance updates found for this selection.';
+        results.appendChild(empty);
+        return;
+      }
+
+      filteredRecords.forEach(function (record) {
+        results.appendChild(createGuidanceItem(record));
+      });
+    }
+
+    function renderCalendar() {
+      var year = calendarDate.getFullYear();
+      var month = calendarDate.getMonth();
+      var firstDay = new Date(year, month, 1);
+      var startDate = new Date(firstDay);
+      var calendarRecords = getFilteredGuidance(records, getFilters());
+      var recordsByDate = calendarRecords.reduce(function (groups, record) {
+        groups[record.date] = groups[record.date] || [];
+        groups[record.date].push(record);
+        return groups;
+      }, {});
+
+      startDate.setDate(firstDay.getDate() - firstDay.getDay());
+
+      if (title) {
+        title.textContent = fullMonthNames[month] + ' ' + year;
+      }
+
+      grid.innerHTML = '';
+
+      for (var dayIndex = 0; dayIndex < 42; dayIndex += 1) {
+        var day = new Date(startDate);
+        day.setDate(startDate.getDate() + dayIndex);
+        var isoDate = formatIsoDate(day);
+        var dayRecords = recordsByDate[isoDate] || [];
+        var dayButton = document.createElement('button');
+
+        dayButton.className = 'calendar-day';
+        dayButton.type = 'button';
+        dayButton.textContent = String(day.getDate());
+        dayButton.dataset.hasGuidance = String(dayRecords.length > 0);
+
+        if (day.getMonth() !== month) {
+          dayButton.classList.add('is-muted');
+        }
+
+        if (selectedDate === isoDate) {
+          dayButton.classList.add('is-selected');
+        }
+
+        if (dayRecords.length) {
+          dayButton.setAttribute('aria-label', dayRecords.length + ' guidance update' + (dayRecords.length === 1 ? '' : 's') + ' on ' + formatDisplayDate(day));
+          dayButton.addEventListener('click', function (dateValue, recordsForDate) {
+            return function () {
+              selectedDate = dateValue;
+              renderCalendar();
+              renderResults();
+              openGuidanceRecords(recordsForDate);
+            };
+          }(isoDate, dayRecords));
+        }
+
+        grid.appendChild(dayButton);
+      }
+    }
+
+    function refresh() {
+      selectedDate = '';
+      populateFilters();
+      var filterMonth = monthSelect.value;
+
+      if (filterMonth) {
+        calendarDate = new Date(Number(yearSelect.value), Number(filterMonth) - 1, 1);
+      } else {
+        var filteredRecords = getFilteredGuidance(records, { year: yearSelect.value, month: '', week: weekSelect.value });
+        var latest = filteredRecords.sort(function (a, b) { return b.sortDate - a.sortDate; })[0] || records[0];
+        if (latest) {
+          calendarDate = new Date(latest.sortDate.getFullYear(), latest.sortDate.getMonth(), 1);
+        }
+      }
+
+      renderCalendar();
+      renderResults();
+    }
+
+    function processCsvData(csv) {
+      records = parseCsv(csv).map(function (record) {
+        var date = parseLocalDate(record.date);
+        return Object.assign({}, record, {
+          sortDate: date,
+          displayDate: formatDisplayDate(date),
+          year: String(date.getFullYear()),
+          month: String(date.getMonth() + 1).padStart(2, '0'),
+          weekStart: formatIsoDate(getWeekStart(date))
+        });
+      }).filter(function (record) {
+        return (record.status || '').toLowerCase() === 'published';
+      }).sort(function (a, b) {
+        return b.sortDate - a.sortDate;
+      });
+
+      if (records.length) {
+        calendarDate = new Date(records[0].sortDate.getFullYear(), records[0].sortDate.getMonth(), 1);
+      }
+
+      refresh();
+    }
+
+    // Completely hardcoded inline database (No CSV file upload required!)
+    var hardcodedCsv = [
+      'id,date,title,summary,owner,status,fullGuidance,attachment',
+      'cdd-refresh-2026-05-24,2026-05-24,"CDD Customer Verification Refresher","Updated customer diligence standards for L1 review.","AML Readiness","Published","This operational guidance updates baseline documentation. Analysts must ensure all beneficial ownership structures are verified.","https://sharepoint.cfsb.com/fincrime/cdd_sop_2026.pdf"',
+      'l1-escalation-2026-05-20,2026-05-20,"L1 to L2 Escalation Language Standard","Clarified narrative templates for suspicious case handoffs.","Quality Assurance","Published","Mandatory five-point checklist introduced. Analysts must clearly summarize transaction patterns.","None"',
+      'tm-typologies-2026-05-15,2026-05-15,"Transaction Monitoring Trade-Based Typologies","Red flags for trade-based money laundering and shell evasion.","Intelligence Unit","Published","Emerging trade-based indicators. Review routes and atypical companies.","https://sharepoint.cfsb.com/fincrime/tbml_typology_guide.pptx"',
+      'sanctions-resolutions-2026-05-08,2026-05-08,"Sanctions & PEP Resolve Protocol","Step-by-step guidance for resolving false matches on global screening queues.","Sanctions Desk","Published","This protocol clarifies screening criteria for potential PEP and sanctions matches. Analysts should utilize secondary identifiers (date of birth, country of origin, middle names) to rule out false matches. All PEP relationships must be documented and escalated through the proper senior compliance channels.","None"',
+      'sar-writing-2026-05-02,2026-05-02,"SAR Writing and Narrative Standard","Approved wording formats and regulatory benchmarks for compiling SAR narratives.","Regulatory Reporting","Published","This update provides approved regulatory wording blocks and mandatory data headers for compiling Suspicious Activity Reports (SARs). Compliance analysts must ensure all narratives present a chronological overview, answer who-what-when-where-why, and use clear, auditable terminology.","https://sharepoint.cfsb.com/fincrime/sar_narrative_template.docx"'
+    ].join('\n');
+
+    processCsvData(hardcodedCsv);
+
+    yearSelect.addEventListener('change', refresh);
+    monthSelect.addEventListener('change', refresh);
+    weekSelect.addEventListener('change', refresh);
+
+    if (previous) {
+      previous.addEventListener('click', function () {
+        selectedDate = '';
+        calendarDate.setMonth(calendarDate.getMonth() - 1);
+        renderCalendar();
+        renderResults();
+      });
+    }
+
+    if (next) {
+      next.addEventListener('click', function () {
+        selectedDate = '';
+        calendarDate.setMonth(calendarDate.getMonth() + 1);
+        renderCalendar();
+        renderResults();
+      });
+    }
+  }
+
+  document.querySelectorAll('[data-guidance-calendar]').forEach(function (section) {
+    initGuidanceCalendar(section);
+  });
+});
+  </script>
+  <script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('[data-org-search-form]').forEach(function (form) {
+    var input = form.querySelector('[data-org-search-input]');
+    var feedback = document.querySelector('[data-org-search-feedback]');
+    var panels = Array.prototype.slice.call(document.querySelectorAll('.pod-workstream-panel'));
+    var cards = Array.prototype.slice.call(document.querySelectorAll('.pod-card'));
+
+    if (!input || !cards.length) {
+      return;
+    }
+
+    function clearMatches() {
+      cards.forEach(function (card) {
+        card.classList.remove('is-search-match');
+        card.hidden = false;
+        card.querySelectorAll('.is-search-match').forEach(function (item) {
+          item.classList.remove('is-search-match');
+        });
+      });
+      panels.forEach(function (panel) {
+        panel.hidden = false;
+      });
+    }
+
+    function updateFeedback(message) {
+      if (feedback) {
+        feedback.textContent = message;
+      }
+    }
+
+    function getPodName(card) {
+      var podId = card.querySelector('.pod-id');
+      var podLead = card.querySelector('.pod-lead');
+      return [podId ? podId.textContent.trim() : '', podLead ? podLead.textContent.trim() : ''].filter(Boolean).join(' — ');
+    }
+
+    function runSearch() {
+      var query = input.value.trim().toLowerCase();
+      var matches = [];
+
+      if (!query) {
+        clearMatches();
+        updateFeedback('Search a name to locate the POD it belongs to.');
+        return;
+      }
+
+      cards.forEach(function (card) {
+        var cardMatches = card.textContent.toLowerCase().indexOf(query) !== -1;
+        card.hidden = !cardMatches;
+        card.classList.toggle('is-search-match', cardMatches);
+
+        card.querySelectorAll('.pod-id, .pod-lead, .pod-member').forEach(function (item) {
+          item.classList.toggle('is-search-match', item.textContent.toLowerCase().indexOf(query) !== -1);
+        });
+
+        if (cardMatches) {
+          matches.push(card);
+        }
+      });
+
+      panels.forEach(function (panel) {
+        panel.hidden = !panel.querySelector('.pod-card:not([hidden])');
+      });
+
+      if (!matches.length) {
+        updateFeedback('No POD found for “' + input.value.trim() + '”.');
+        return;
+      }
+
+      if (matches.length === 1) {
+        updateFeedback('Showing ' + getPodName(matches[0]) + ' for “' + input.value.trim() + '”.');
+        return;
+      }
+
+      updateFeedback('Showing ' + matches.length + ' PODs for “' + input.value.trim() + '”.');
+    }
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      runSearch();
+    });
+
+    input.addEventListener('input', runSearch);
+    runSearch();
+  });
+});
+  </script>
+</body>
+</html>
