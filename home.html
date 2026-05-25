@@ -286,16 +286,7 @@
         </div>
       </footer>
 
-      <!-- Guidance Details Modal -->
-      <div class="modal-backdrop" data-guidance-modal hidden>
-        <section class="guidance-modal glass" role="dialog" aria-modal="true" aria-labelledby="guidance-modal-title">
-          <button class="modal-close" type="button" data-guidance-close aria-label="Close guidance details">×</button>
-          <span class="doc-type" data-guidance-modal-date></span>
-          <h2 class="section-title" id="guidance-modal-title" data-guidance-modal-title></h2>
-          <div class="doc-meta"><span data-guidance-modal-owner></span></div>
-          <p class="card-text" data-guidance-modal-body></p>
-        </section>
-      </div>
+
 
     </div>
   </div>
@@ -1254,5 +1245,16 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
   </script>
+  <!-- Guidance Details Modal (Root-level for proper fixed centering) -->
+  <div class="modal-backdrop" data-guidance-modal hidden>
+    <section class="guidance-modal glass" role="dialog" aria-modal="true" aria-labelledby="guidance-modal-title">
+      <button class="modal-close" type="button" data-guidance-close aria-label="Close guidance details">×</button>
+      <span class="doc-type" data-guidance-modal-date></span>
+      <h2 class="section-title" id="guidance-modal-title" data-guidance-modal-title></h2>
+      <div class="doc-meta"><span data-guidance-modal-owner></span></div>
+      <p class="card-text" data-guidance-modal-body></p>
+    </section>
+  </div>
+
 </body>
 </html>
