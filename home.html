@@ -17,7 +17,7 @@
       </a>
       <nav class="nav-links" data-site-nav>
         <a class="nav-link" href="#guidance">Guidance &amp; Updates</a>
-        <a class="nav-link" href="#resources">Process Library</a>
+        <a class="nav-link" href="#resources">Resource List</a>
         <a class="nav-link" href="#documents">Document Library</a>
         <a class="nav-link" href="#org">POD Structure</a>
         <a class="nav-link" href="#meet-team">Meet the Team</a>
@@ -74,86 +74,114 @@
           </div>
         </section>
 
-        <!-- Process Library (Searchable Resources Card Grid) -->
-        <section id="resources" class="section page-panel glass">
+        <!-- Resource List Section -->
+        <section id="resources" class="section">
           <div class="section-header">
             <div>
-              <span class="eyebrow">Process Library</span>
-              <h2 class="section-title">Searchable glass resource library.</h2>
-              <p class="section-kicker">Use this section for process resources, escalation standards, operating references, and controlled analyst support material.</p>
+              <span class="eyebrow">Resource List</span>
+              <h2 class="section-title">Resource List</h2>
+              <p class="section-kicker">Templates, references, and quick links. All operating templates, hummingbird files, and supporting resources organised by category. Click a link to open the source document.</p>
             </div>
           </div>
-          <form role="search" action="/#resources" method="get" class="search-panel glass" style="margin-bottom: var(--space-5);">
-            <input type="search" name="q" placeholder="Search resources..." aria-label="Search resources" />
-            <button type="submit" class="btn">Search</button>
-          </form>
+          <div class="resource-list-grid">
 
-          <div class="resource-grid">
-            <article class="resource-card glass">
-              <span class="doc-type">SOP</span>
-              <h3 class="card-title">CDD Operating Standard</h3>
-              <p class="card-text">Standardized benchmarks for customer verification, beneficial ownership identification, and source of wealth reviews.</p>
-              <div class="doc-meta">
-                <span>Owner: AML Readiness</span>
-                <span>Last Updated: May 2026</span>
+            <article class="page-panel glass resource-section resource-section--wide">
+              <div class="resource-section__heading">
+                <span class="resource-section__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l3 3v15H6z"/><path d="M15 3v4h4"/><path d="M9 12h6"/><path d="M9 16h5"/></svg>
+                </span>
+                <h3 class="resource-section__title">Templates</h3>
               </div>
-              <a href="#" class="btn">Open SOP</a>
+              <table class="resource-table">
+                <thead>
+                  <tr><th scope="col">Workstream</th><th scope="col">Decision</th><th scope="col">Product</th><th scope="col">Access</th><th scope="col">Updated date</th></tr>
+                </thead>
+                <tbody data-resource-body="Templates">
+                  <tr><td>L1</td><td>Esc</td><td>Wise</td><td><a href="#" target="_blank" rel="noopener">Open</a></td><td>04 May 2025</td></tr>
+                  <tr><td>L1</td><td>Esc</td><td>Crypto</td><td><a href="#" target="_blank" rel="noopener">Open</a></td><td>04 May 2025</td></tr>
+                  <tr><td>L1</td><td>Esc</td><td>Fluz</td><td><a href="#" target="_blank" rel="noopener">Open</a></td><td>04 May 2025</td></tr>
+                  <tr><td>L1</td><td>Not Susp</td><td>&mdash;</td><td><a href="#" target="_blank" rel="noopener">Open</a></td><td>04 May 2025</td></tr>
+                  <tr><td>L1</td><td>Esc</td><td>Crypto &middot; Buy/Sell</td><td><a href="#" target="_blank" rel="noopener">Open</a></td><td>04 May 2025</td></tr>
+                  <tr><td>L1</td><td>Esc</td><td>Crypto &middot; Card</td><td><a href="#" target="_blank" rel="noopener">Open</a></td><td>04 May 2025</td></tr>
+                </tbody>
+              </table>
             </article>
 
-            <article class="resource-card glass">
-              <span class="doc-type">Checklist</span>
-              <h3 class="card-title">L1 Alert Escalation Guide</h3>
-              <p class="card-text">Step-by-step verification standard for analysts before escalating suspicious activity alerts to L2 review.</p>
-              <div class="doc-meta">
-                <span>Owner: Quality Assurance</span>
-                <span>Version: v2.4 (Active)</span>
+            <article class="page-panel glass resource-section resource-section--wide">
+              <div class="resource-section__heading">
+                <span class="resource-section__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13c4-5 8-7 15-7"/><path d="M7 17c4-2 8-3 13-2"/><path d="M8 11l-4-1 3 4"/><path d="M15 7l2-4 1 5"/></svg>
+                </span>
+                <h3 class="resource-section__title">Hummingbird</h3>
               </div>
-              <a href="#" class="btn">Open Checklist</a>
+              <table class="resource-table">
+                <thead>
+                  <tr><th scope="col">Start date</th><th scope="col">End date</th><th scope="col">Access</th><th scope="col">Updated date</th></tr>
+                </thead>
+                <tbody data-resource-body="Hummingbird">
+                  <tr><td>01 Jan 2025</td><td>30 Jun 2025</td><td><a href="#" target="_blank" rel="noopener">Open</a></td><td>04 May 2025</td></tr>
+                  <tr><td>01 Jan 2026</td><td>23 Apr 2026</td><td><a href="#" target="_blank" rel="noopener">Open</a></td><td>04 May 2025</td></tr>
+                  <tr><td>30 Jun 2025</td><td>31 Dec 2025</td><td><a href="#" target="_blank" rel="noopener">Open</a></td><td>04 May 2025</td></tr>
+                  <tr><td>&mdash;</td><td>30 Apr 2025</td><td><a href="#" target="_blank" rel="noopener">Open</a></td><td>04 May 2025</td></tr>
+                </tbody>
+              </table>
             </article>
 
-            <article class="resource-card glass">
-              <span class="doc-type">Guide</span>
-              <h3 class="card-title">High-Risk Typologies Guide</h3>
-              <p class="card-text">Curated list of transaction indicators, trade-based money laundering typologies, and shell company detection red flags.</p>
-              <div class="doc-meta">
-                <span>Owner: Intelligence Unit</span>
-                <span>Updated: Quarterly</span>
+            <article class="page-panel glass resource-section">
+              <div class="resource-section__heading">
+                <span class="resource-section__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="6" height="6" rx="1.5"/><rect x="14" y="4" width="6" height="6" rx="1.5"/><rect x="4" y="14" width="6" height="6" rx="1.5"/><rect x="14" y="14" width="6" height="6" rx="1.5"/></svg>
+                </span>
+                <h3 class="resource-section__title">Others</h3>
               </div>
-              <a href="https://sharepoint.cfsb.com/fincrime/tbml_typology_guide.pptx" target="_blank" rel="noopener" class="btn">View Guide</a>
+              <table class="resource-table">
+                <thead>
+                  <tr><th class="resource-table__num" scope="col">#</th><th scope="col">Name</th><th scope="col">Access</th></tr>
+                </thead>
+                <tbody data-resource-body="Others">
+                  <tr><td>1</td><td>FAQ</td><td><a href="#" target="_blank" rel="noopener">Open</a></td></tr>
+                  <tr><td>2</td><td>Boiler Plate</td><td><a href="#" target="_blank" rel="noopener">Open</a></td></tr>
+                  <tr><td>3</td><td>L1A Best Practices</td><td><a href="#" target="_blank" rel="noopener">Open</a></td></tr>
+                  <tr><td>4</td><td>L2 Review Procedure</td><td><a href="#" target="_blank" rel="noopener">Open</a></td></tr>
+                  <tr><td>5</td><td>Sigma Guide</td><td><a href="#" target="_blank" rel="noopener">Open</a></td></tr>
+                </tbody>
+              </table>
             </article>
 
-            <article class="resource-card glass">
-              <span class="doc-type">Protocol</span>
-              <h3 class="card-title">Sanctions Screening Protocol</h3>
-              <p class="card-text">Operational guidelines and screening rules for resolving potential PEP and international sanctions match queues.</p>
-              <div class="doc-meta">
-                <span>Owner: Sanctions Desk</span>
-                <span>Last Updated: April 2026</span>
+            <article class="page-panel glass resource-section">
+              <div class="resource-section__heading">
+                <span class="resource-section__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 21V4"/><path d="M6 5h11l-2 4 2 4H6"/></svg>
+                </span>
+                <h3 class="resource-section__title">Priority List</h3>
               </div>
-              <a href="#" class="btn">View Protocol</a>
+              <table class="resource-table">
+                <thead>
+                  <tr><th class="resource-table__num" scope="col">#</th><th scope="col">Name</th><th scope="col">Access</th></tr>
+                </thead>
+                <tbody data-resource-body="Priority List">
+                  <tr class="resource-table__empty"><td colspan="3">No items yet. Add entries from the source spreadsheet.</td></tr>
+                </tbody>
+              </table>
             </article>
 
-            <article class="resource-card glass">
-              <span class="doc-type">SOP</span>
-              <h3 class="card-title">SAR Filing Narrative Standard</h3>
-              <p class="card-text">Regulatory report formatting guidelines, approved compliance wording, and mandatory narratives for FinCEN reporting.</p>
-              <div class="doc-meta">
-                <span>Owner: Regulatory Reporting</span>
-                <span>Current Version</span>
+            <article class="page-panel glass resource-section">
+              <div class="resource-section__heading">
+                <span class="resource-section__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7h12"/><path d="M6 7h.01"/><path d="M8 12h12"/><path d="M6 12h.01"/><path d="M8 17h12"/><path d="M6 17h.01"/></svg>
+                </span>
+                <h3 class="resource-section__title">Transaction Codes</h3>
               </div>
-              <a href="#" class="btn">Open SOP</a>
+              <table class="resource-table">
+                <thead>
+                  <tr><th class="resource-table__num" scope="col">#</th><th scope="col">Name</th><th scope="col">Access</th></tr>
+                </thead>
+                <tbody data-resource-body="Transaction Codes">
+                  <tr class="resource-table__empty"><td colspan="3">No items yet. Add entries from the source spreadsheet.</td></tr>
+                </tbody>
+              </table>
             </article>
 
-            <article class="resource-card glass">
-              <span class="doc-type">Excel</span>
-              <h3 class="card-title">Typology Code Mapping</h3>
-              <p class="card-text">Full cross-reference database mapping internal transaction codes to global money laundering typologies.</p>
-              <div class="doc-meta">
-                <span>Owner: Best Practices</span>
-                <span>Version: v1.1</span>
-              </div>
-              <a href="#" class="btn">Open Database</a>
-            </article>
           </div>
         </section>
 
